@@ -1,0 +1,63 @@
+body {
+    background: #b6b7bc;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    font-size: .95em;
+    padding: 0px;
+    color: #696969;
+}
+
+.page {
+    width: 60rem;
+    background-color: #fff;
+    margin: 2rem auto 0rem auto;
+    border: 1px solid #496077;
+}
+
+.card-header {
+    background: #15317E;
+}
+
+.card-footer {
+    background: #15317E;
+}
+
+.col {
+    height: 2rem;
+}
+
+.main {
+    min-height: 30rem;
+}
+
+.card-title {
+    color: #112990;
+    font-size: X-Large;
+}
+
+.row {
+    flex-wrap: inherit;
+}
+
+.btn-sm {
+    --bs-btn-padding-y: 0.05rem;
+}
+
+.offset-sm-5 {
+    margin-left: 37.666667%;
+}
+
+.title {
+    color: #112990;
+}
+
+.wrapper {
+    border: dotted #0B85A1;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) and (min-width:577px) {
+    .col-2 {
+        width: 8rem;
+    }
+}

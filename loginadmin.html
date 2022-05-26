@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/d-logo.ico" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div class="page">
+        <div id="header"></div>
+        <div class="main p-3">
+            <div class="logo float-start">
+                <img class="logo" src="Images/LogoDDV.jpg" />
+            </div>
+            <div class="language-object float-end p-2">
+                <input type="image" src="Images/ja-JP.gif" />
+                <input type="image" src="Images/en-US.gif" />
+            </div>
+            <div class="right w-75 float-lg-start ">
+                <div class="fs-3 fw-bold text-center">
+                    <span style="color: #112990;">File Transfer
+                                System</span>
+                </div>
+                <br />
+                <!-- <div class="text-center">
+                    <span>File Transfer and Sharing System</span>
+                </div>
+                <br /> -->
+                <div class="container ms-5">
+                    <form>
+                        <div class="row mb-1 ms-5">
+                            <label for="inputEmail" class="col-2 col-form-label ms-5">Login ID</label>
+                            <div class="input-group-sm col-sm-5 ">
+                                <input type="email" class="form-control border-dark" id="inputEmail">
+                            </div>
+                        </div>
+                        <div class="row mb-1 ms-5">
+                            <label for="inputPassword" class="col-2 col-form-label ms-5">Password</label>
+                            <div class="input-group-sm col-sm-5">
+                                <input type="password" class="form-control border-dark" id="inputPassword">
+                            </div>
+                        </div>
+                        <div class="row mb-2 ms-5">
+                            <span class="col-3 ms-5">Mode Select :</span>
+                        </div>
+                        <div class="row">
+                            <div class="input-group-sm offset-sm-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="value" id="uploadfile" value="uploadfile">
+                                    <label class="form-check-label" for="value">
+                                        Upload files for customer download
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="value" id="uploadid" value="uploadid">
+                                    <label class="form-check-label" for="value">
+                                        Issue customer upload ID
+                                    </label>
+                                </div>
+                                <!-- <input type="radio" name="value" value="google"><span>Google</span><br>
+                                <input type="radio" name="value" value="yahoo"><span>Yahoo</span><br>
+                                <input type="radio" name="value" value="bing"><span>Bing</span> -->
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="value" id="exampleRadios3" value="option3">
+                                    <label class="form-check-label" for="exampleRadios3">
+                                        Manage shared files
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offset-sm-5 mb-2">
+                            <button id="buttonlogin" type="submit" class="btn btn-light border border-dark btn-sm me-2">Login</button>
+                            <button type="submit" class="btn btn-light border border-dark btn-sm">Cancel</button>
+                        </div>
+                        <div class="offset-sm-4">
+                            <a id="" href="#">How to Use</a> |
+                            <a id="" href="#">Management User</a>
+                        </div>
+
+                    </form>
+                    <script>
+                        $(function() {
+                            $("input[name$='value']").click(function() {
+                                var value = $(this).val();
+                                if (value == 'uploadfile') {
+                                    window.location.assign("./adminuploadfile.html");
+                                } else if (value == 'uploadid') {
+                                    window.location.assign("./adminuploadID.html");
+                                } else if (value == 'option3') {
+                                    window.location.assign("#");
+                                }
+                            });
+                        });
+                        // const alertStatus = (e) => {
+                        //     if ($("#uploadfile").is(":checked")) {
+                        //         alert("Is not checked :( ");
+                        //     } else {
+                        //         alert("Is not checked :( ");
+                        //     }
+                        // };
+
+                        // $(document).on("click", "#buttonlogin", alertStatus);
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>

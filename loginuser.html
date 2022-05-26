@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DataDesign</title>
+    <link rel="shortcut icon" href="Images/d-logo.ico" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div class="page">
+        <div id="header"></div>
+        <div class="main p-3">
+            <div class="logo float-start">
+                <img class="logo" src="Images/LogoDDV.jpg" />
+            </div>
+            <div class="language-object float-end p-2">
+                <input type="image" src="Images/ja-JP.gif" />
+                <input type="image" src="Images/en-US.gif" />
+            </div>
+            <div class="right w-75 float-lg-start text-center">
+                <div class="fs-3 fw-bold">
+                    <span style="color: #112990;">File Transfer
+                                System</span>
+                </div>
+                <br />
+                <div class="text-center">
+                    <span>File Transfer and Sharing System</span>
+                </div>
+                <br />
+                <div class="container ms-5">
+                    <form>
+                        <div class="row mb-2 ms-5">
+                            <label for="inputID" class="col-2 col-form-label ms-5">Login ID</label>
+                            <div class="input-group-sm col-sm-5 ">
+                                <input type="text" class="form-control border-dark" id="inputID">
+                            </div>
+                        </div>
+                        <div class="row mb-2 ms-5">
+                            <label for="inputPassword" class="col-2 col-form-label ms-5">Password</label>
+                            <div class="input-group-sm col-sm-5">
+                                <input type="password" class="form-control border-dark" id="inputPassword">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-5 offset-sm-5 float-end">
+                                <button type="submit" class="btn btn-light border border-dark btn-sm">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>
